@@ -2,84 +2,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Telegram Bot Form</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Pawan Hirumina</title>
 </head>
 <body>
-    <h2>Contact Form</h2>
-    <form id="contactForm">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required><br>
+    <nav>
+        <div class="nav-content">
+            <label class="logo">Pawan Hirumina</label>
+            <a href="#contact" class="link">Contact</a>
+        </div>
+    </nav>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required><br>
+    <section id="about-section" class="parallax">
+        <div class="content">
+            <h1 aria-label="Hi! I'm a developer">
+                Hi! I'm a&nbsp;<span class="typewriter"></span>
+              </h1>
+              
+        </div>
+    </section>
 
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="4" required></textarea><br>
-
-        <label for="reason">Reason for Contact:</label>
-        <select id="reason" name="reason" required>
-            <option value="general">General Inquiry</option>
-            <option value="feedback">Feedback</option>
-            <option value="support">Support</option>
-        </select><br>
-
-        <button type="button" onclick="submitForm()">Submit</button>
-       
-    </form>
-
-    <script>
-         function submitForm() {
-            var name = document.getElementById("name").value;
-            var email = document.getElementById("email").value;
-            var message = document.getElementById("message").value;
-            var reason = document.getElementById("reason").value;
-
-            var formData = {
-                'Name': name,
-                'Email': email,
-                'Message': message,
-                'Reason': reason
-            };
-
-            // Replace with your actual bot token and chat ID
-            var botToken = '6568911703:AAG_jD70KY5ic_UITn5e5TF7mibVozEksZM';
-            var chatId = '6938682201';
-
-            // Construct the HTML message with form data
-            var htmlMessage = `<b>New Form Submission</b>\n\n`;
-            for (var key in formData) {
-                htmlMessage += `<b>${key}:</b> ${formData[key]}\n`;
-            }
-
-            // Set the Telegram API endpoint
-            var apiUrl = `https://api.telegram.org/bot${botToken}/sendMessage`;
-
-            // Set the request parameters
-            var params = {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({
-                    chat_id: chatId,
-                    text: htmlMessage,
-                    parse_mode: 'HTML',
-                }),
-            };
-
-            // Send the message to Telegram
-            fetch(apiUrl, params)
-                .then(response => response.json())
-                .then(data => {
-                    console.log('Message sent successfully:', data);
-                    alert('Message sent successfully!');
-                })
-                .catch(error => {
-                    console.error('Error sending message:', error);
-                    alert('Error sending message. Please try again.');
-                });
-        }
-    </script>
+    <section id="projects-section">
+        <div class="content">
+          
+        </div>
+    </section>
 </body>
 </html>

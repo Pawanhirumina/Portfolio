@@ -1,0 +1,18 @@
+h1 {
+    font-size: 38px;
+    line-height: 48px;
+    font-weight: 700;
+    display: block;
+}
+h2 {
+    display: block;
+    font-size: 30px;
+    line-height: 42px;
+    font-weight: 600;
+}
+p {
+    display: block;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 500;
+}
