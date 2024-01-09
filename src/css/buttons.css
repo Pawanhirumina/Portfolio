@@ -1,0 +1,57 @@
+button {
+  box-shadow: 0 0 10px 0 #2a86ff;
+    margin: 10px 0;
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #2a86ff;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 20px;
+    border-radius: 10px;
+  }
+  
+button:hover {
+    background-color: rgb(42 134 255 / 80%);
+  }
+.button {
+  box-shadow: 0 0 10px 0 #2a86ff;
+  backdrop-filter: blur(20px);
+    margin: 10px 0;
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #2a86ff;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 20px;
+    border-radius: 10px;
+  }
+  
+  .button:hover {
+    background-color: rgb(42 134 255 / 80%);
+  }
+input[type=submit] {
+  box-shadow: 0 0 10px 0 #2a86ff;
+    margin: 10px 0;
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #2a86ff;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 20px;
+    border-radius: 10px;
+}
+input[type=submit]:hover {
+    background: rgb(42 134 255 / 80%);
+}
