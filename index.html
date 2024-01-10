@@ -7,20 +7,14 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
     <link rel="apple-touch-icon" href="favicon.png">
-    <title>Pawan Hirumina</title>
+    <title>John Doe</title>
 </head>
 <body>
 
-  <div class="popup" id="popup">
-    <h1>Do you want a cookie?</h1>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum, recusandae.</p>
-    <button onclick="cookiesAllow()" >Allow</button>
-    <button onclick="cookiesDeny()" >Deny</button>
-   </div>
 
     <nav>
         <div class="nav-content">
-            <label class="logo">Pawan Hirumina</label>
+            <label class="logo">John Doe</label>
             <a href="#contact-section" class="link">Contact</a>
             <a href="#projects-section" class="link">Projects</a>
             <a href="#about-section" class="link">About</a>
@@ -30,7 +24,7 @@
     <section id="about-section">
         <div class="content">
             <h2>Hello There!</h2>
-            <h1>I'm Pawan Hirumina</h1>
+            <h1>I'm John Doe</h1>
             <p>I make web sites and web apps for fun</p>
             <button>Learn More</button><br>
         </div>
@@ -83,29 +77,26 @@
     <section id="contact-section" >
         <div class="content">
           <div class="container">
-            <form action="p/form-submitted.html" autocomplete="off">
-          
+            <form id="contactForm">
               <h1>Contact Me</h1>
-              <input type="text" id="fname" name="firstname" placeholder="Your first name.." required>
-              <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
-              <input type="email" id="lname" name="lastname" placeholder="Your email (optianal)..">
-              <select id="country" name="country" aria-placeholder="Subject" required>
-                <option value="australia">Subject</option>
-                <option value="canada">Genaral</option>
-                <option value="usa">Quesstion</option>
-              </select>
-              <textarea id="subject" name="subject" placeholder="Your message.." style="height:200px" maxlength="200"></textarea>
-              <input type="submit" value="Submit">
-            </form>
+              <p id="error-message">Wanna Contact Me</p>
+
+              <input type="text" id="name" name="name" required placeholder="Your Name">
+          
+              <input type="email" id="email" name="email" required placeholder="Your Email">
+          
+              <textarea id="message" name="message" rows="4" required placeholder="Your Message"></textarea>
+          
+              <button type="button" onclick="submitForm()">Submit</button>
+          </form>
           </div>
         </div>
     </section>
 
-    <footer>
-      
-    </footer>
 
 
-<script defer src="script.js"></script>
+
+
+<script src="script.js"></script>
 </body>
 </html>
