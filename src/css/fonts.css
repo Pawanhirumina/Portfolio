@@ -34,10 +34,3 @@ p {
         color: rgb(193, 193, 193);
     }
 }
-a {
-    color: #2a86ff;
-    font-size: 18px;
-}
-a:hover {
-    color: rgb(42 134 255 / 80%);
-}

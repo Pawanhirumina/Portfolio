@@ -18,6 +18,7 @@ button:hover {
     background-color: rgb(42 134 255 / 80%);
   }
 .button {
+  text-decoration: none;
   box-shadow: 0 0 10px 0 #2a86ff;
   backdrop-filter: blur(20px);
     margin: 10px 0;
@@ -35,7 +36,7 @@ button:hover {
   }
   
   .button:hover {
-    background-color: rgb(42 134 255 / 80%);
+    background-color: rgb(42 134 255 / 80%); 
   }
 input[type=submit] {
   box-shadow: 0 0 10px 0 #2a86ff;

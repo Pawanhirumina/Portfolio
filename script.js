@@ -51,6 +51,16 @@ function submitForm() {
         })
         .catch(error => {
             console.error('Error sending message:', error);
-            document.getElementById('error-message').textContent = 'Error sending message. Please try again.';
+            document.getElementById('error-message').textContent = 'Ooops, Error sending message.';
         });
 }
+
+
+function closePopup() {
+    document.getElementById("popup").style.display = "none";
+   }
+
+function learnMore() {
+    window.location.href = 'https://github.com/Pawanhirumina'
+}
+   
